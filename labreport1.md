@@ -1,4 +1,4 @@
-# Tutorial to log into course-specific account on ieng6
+# Lab Report 1
 This tutorial will have three steps:
   1. Installing VSCode
   2. Remotely Connecting
