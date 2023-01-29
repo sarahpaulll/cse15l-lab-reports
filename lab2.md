@@ -32,10 +32,13 @@ public void testReversed() {
 # JUnit test without failure-inducing input 
 @Test
 public void testReversed() {
-    int[] input1 = {3};
-    assertArrayEquals(new int[]{3}, ArrayExamples.reversed(input1));
+    int[] input1 = {0};
+    assertArrayEquals(new int[]{0}, ArrayExamples.reversed(input1));
 }
 ```
+**Running the Tests**
+![Running Tests](https://user-images.githubusercontent.com/122580017/215299291-23384dc3-7576-48f1-94b4-29c63c25676f.png)
+![Running Tests](https://user-images.githubusercontent.com/122580017/215299667-ef4ea61d-57ff-4e2a-9466-5b89ec574cd4.png)
 
 **The Bug Before-and-After Code**
 ```
