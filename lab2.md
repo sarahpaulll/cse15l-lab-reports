@@ -9,9 +9,9 @@ The image below demonstrates good morning being added to the StringServer. By ad
 The image below demonstrates when another string is added to the StringServer. The first method which is called is the main in the class StringServer. Main then calls the method handleRequest which uses localhost:5898/add-messages?s=Hello as its argument. By calling handleRequest with this argument it changes the instance variable string from "Good Morning" to "Good Morning\nHello" which is shown in the 24th line. After the instance variable string is updated it then returns this string, therefore resulting in the image below. 
 ![String2](https://user-images.githubusercontent.com/122580017/215230254-4be85352-4f39-49d3-ac48-528831a22adb.png)
 
-A failure-inducing input for the code with the bug is shown in the code block below.
+**Bugs**
 ```
-# code block with bug
+# method reversed with bug
 static int[] reversed(int[] arr) {
     int[] newArray = new int[arr.length];
     for(int i = 0; i < arr.length; i += 1) {
@@ -21,17 +21,25 @@ static int[] reversed(int[] arr) {
 }
 ```
 ```
-# JUnit test code block
+# JUnit test with failure-inducing input 
 @Test
 public void testReversed() {
     int[] input2 = {1, 2, 3, 4, 5};
     assertArrayEquals(new int[] {5, 4, 3, 2, 1}, ArrayExamples.reversed(input2));
 }
 ```
+```
+# JUnit test without failure-inducing input 
+@Test
+public void testReversed() {
+    int[] input1 = {3};
+    assertArrayEquals(new int[]{3}, ArrayExamples.reversed(input1));
+}
+```
 
 **The Bug Before-and-After Code**
 ```
-# before code block
+# before
 static int[] reversed(int[] arr) {
     int[] newArray = new int[arr.length];
     for(int i = 0; i < arr.length; i += 1) {
@@ -41,7 +49,7 @@ static int[] reversed(int[] arr) {
 }
 ```
 ```
-# after code block
+# after
 static int[] reversed(int[] arr) {
     int[] newArray = new int[arr.length];
     for(int i = 0; i < arr.length; i += 1) {
