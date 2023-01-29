@@ -1,4 +1,6 @@
 # Lab Report 2
+
+## Part One
 The code for StringServer is shown below along with two images of adding strings to the server.
 
 ![StringServer](https://user-images.githubusercontent.com/122580017/215230190-6cdd453b-be36-4a0a-a02f-ea8745f16997.png)
@@ -8,6 +10,8 @@ The image below demonstrates good morning being added to the StringServer. By ad
 
 The image below demonstrates when another string is added to the StringServer. The first method which is called is the main in the class StringServer. Main then calls the method handleRequest which uses localhost:5898/add-messages?s=Hello as its argument. By calling handleRequest with this argument it changes the instance variable string from "Good Morning" to "Good Morning\nHello" which is shown in the 24th line. After the instance variable string is updated it then returns this string, therefore resulting in the image below. 
 ![String2](https://user-images.githubusercontent.com/122580017/215230254-4be85352-4f39-49d3-ac48-528831a22adb.png)
+
+## Part Two
 
 **Bugs**
 ```
@@ -37,6 +41,7 @@ public void testReversed() {
 }
 ```
 **Running the Tests**
+
 ![Running Tests](https://user-images.githubusercontent.com/122580017/215299291-23384dc3-7576-48f1-94b4-29c63c25676f.png)
 ![Running Tests](https://user-images.githubusercontent.com/122580017/215299667-ef4ea61d-57ff-4e2a-9466-5b89ec574cd4.png)
 
@@ -61,3 +66,7 @@ static int[] reversed(int[] arr) {
     return newArray;
 }
 ```
+The bug was that the code was copying the reversed version of the newArray, which is initialized to all zero entries, into the original array. The changes to fix the bug were made in the fourth line of the code where newArray[i] is now on the right side of the equal sign and arr[arr.length - i -1] on the left side and then returning newArray. Thus, now the code copies the original array in reversed order into the newArray and then returns this newArray. 
+
+## Part Three
+In lab two I learned how to use github desktop, which I was unfamiliar with before this lab. On Github Desktop I learned how to clone respitories from my github account and open these files onto VSCode where I could edit them. Finally on Github Desktop I learned how to commit and push changes that I have made to these files so that the changes within the file would be visible on Github. 
