@@ -1,5 +1,7 @@
 # Lab Report 3
 
+All of the commands below were found on this [website](https://www.digitalocean.com/community/tutorials/grep-command-in-linux-unix).
+
 ## grep ^character
 The command grep ^character matches the given character at the beginning of the line in the file or directory it is searching in. This command is useful because it will display the lines that start with the given character. 
 ```
@@ -26,7 +28,7 @@ Zaanse Schans is the archetypal Dutch landscape personified, and lies just a few
 
 
 ## grep -r
-The command grep -r will search for a string in the currect directory and all subdirectories
+The command grep -r will search for a string in the currect directory and all subdirectories. This is useful because it will find the string within the directory and all of its subdirectories. 
 ```
 # Example One: Input
 grep -r "Zaanse" *
@@ -68,7 +70,7 @@ Canada to the British.
 ```
 
 ## grep -n
-The command grep -n shows the number of the lines where the string is matched. 
+The command grep -n shows the number of the lines where the string is matched. This is useful because you can locate the specific line of where the string occurs within the file. 
 ```
 # Example One: Input
 grep -n "Boston Common" written_2/*/*/*.txt
@@ -91,4 +93,3 @@ written_2/travel_guides/berlitz1/WhereToFWI.txt:13:        Lesser Antilles chain
 written_2/travel_guides/berlitz1/WhereToFWI.txt:736:        along the confusing Antilles chain, some experts suggest that he
 ```
 
-These commands were found on this [website](https://www.digitalocean.com/community/tutorials/grep-command-in-linux-unix)
