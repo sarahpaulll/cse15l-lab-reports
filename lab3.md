@@ -47,5 +47,48 @@ written_2/non-fiction/OUP/Berk/ch1.txt:•Bob and Sharon, parents of a 4-year-ol
 ```
 
 ## grep -i
+The command grep -i ignores case sensitivity, thus this command is useful because it will search for a string regardless of the capitalization. 
+```
+# Example One: Input
+grep -i "italy" written_2/*/*/HistoryFrance.txt
+```
+```
+# Example One: Output
+order to guarantee communications between Italy and Spain. When this
+In between defeating the Aus­trians in Italy and a less
+fighting in Fascist Italy and Nazi Germany.
+```
+```
+# Example Two: Input
+grep -i "canada" written_2/*/*/HistoryFWI.txt
+```
+```
+# Example Two: Output
+Canada to the British.
+```
 
 ## grep -n
+The command grep -n shows the number of the lines where the string is matched. 
+```
+# Example One: Input
+grep -n "Boston Common" written_2/*/*/*.txt
+```
+```
+# Example One: Output
+written_2/travel_guides/berlitz2/Boston-WhereToGo.txt:7:Boston Common, Beacon Hill,and The Esplanade
+written_2/travel_guides/berlitz2/Boston-WhereToGo.txt:8:Boston Common
+written_2/travel_guides/berlitz2/Boston-WhereToGo.txt:84:In the middle of the 19th-century, Boston ended at Boston Common and Back Bay was just a polluted tidal flat. In 30 years, however, an immense landfill project transformed it into the city’s most fashionable residential and commercial district to which the well-to-do moved from Beacon Hill and the South End.
+written_2/travel_guides/berlitz2/Boston-WhereToGo.txt:113:Franklin Park lies close by to the west. The Zoo (open winter Monday–Friday, 10am–4 pm; 10–5pm, Saturday, Sunday, and holidays; 10am–5pm and 10am–6pm respectively in winter), a 75-acre (30-hectare) area with 150 different species, is part of the park. The showpieces are the new lion exhibit, snow leopard and cheetah exhibits, and an African tropical rain forest, which is complete with gorillas and warthogs. Franklin Park was the jewel in the Emerald Necklace, the last in a 7-mile (11-km) network of parks designed by Frederick Law Olmsted that run all the way from Boston Common.
+```
+```
+# Example Two: Input
+grep -n "Antilles chain" written_2/*/*/*.txt
+```
+```
+# Example Two: Output
+written_2/travel_guides/berlitz1/HistoryFWI.txt:15:        America began migrating up the Antilles chain, reaching Martinique and
+written_2/travel_guides/berlitz1/WhereToFWI.txt:13:        Lesser Antilles chain. Its major neighbors are volcano-devastated
+written_2/travel_guides/berlitz1/WhereToFWI.txt:736:        along the confusing Antilles chain, some experts suggest that he
+```
+
+These commands were found on this [website](https://www.digitalocean.com/community/tutorials/grep-command-in-linux-unix)
