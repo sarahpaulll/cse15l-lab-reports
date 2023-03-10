@@ -52,14 +52,14 @@ written_2/travel_guides/berlitz2/Poland-History.txt
 The command find -type f will search for files within the specified directory. Thus, this is useful because you can search for a file without specifing the name within a directory. This command was found at this [website](https://www.redhat.com/sysadmin/linux-find-command).
 ```
 # Example One: Input
-find written_2/non-fiction/OUP/Berk/ -type f
+find written_2/non-fiction/OUP/Berk -type f
 ```
 ```
 # Example One: Output
-written_2/non-fiction/OUP/Berk//ch2.txt
-written_2/non-fiction/OUP/Berk//ch1.txt
-written_2/non-fiction/OUP/Berk//CH4.txt
-written_2/non-fiction/OUP/Berk//ch7.txt
+written_2/non-fiction/OUP/Berk/ch2.txt
+written_2/non-fiction/OUP/Berk/ch1.txt
+written_2/non-fiction/OUP/Berk/CH4.txt
+written_2/non-fiction/OUP/Berk/ch7.txt
 ```
 ```
 # Example Two: Input
@@ -67,9 +67,9 @@ find written_2/non-fiction/OUP/Rybczynski/ -type f
 ```
 ```
 # Example Two: Output
-written_2/non-fiction/OUP/Rybczynski//ch2.txt
-written_2/non-fiction/OUP/Rybczynski//ch3.txt
-written_2/non-fiction/OUP/Rybczynski//ch1.txt
+written_2/non-fiction/OUP/Rybczynski/ch2.txt
+written_2/non-fiction/OUP/Rybczynski/ch3.txt
+written_2/non-fiction/OUP/Rybczynski/ch1.txt
 ```
 
 ## find type -d
