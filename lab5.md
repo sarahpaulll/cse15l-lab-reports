@@ -5,16 +5,16 @@
 The command find -name will search for a file with a specific name, which is useful because it can find a file within the given directory matching with the name given in the command line. This was found on this [website](https://www.geeksforgeeks.org/find-command-in-linux-with-examples/).
 ```
 # Example One: Input
-find written_2/ -name ch1.txt
+find written_2 -name ch1.txt
 
 ```
 ```
 # Example One: Output 
-written_2//non-fiction/OUP/Berk/ch1.txt
-written_2//non-fiction/OUP/Abernathy/ch1.txt
-written_2//non-fiction/OUP/Rybczynski/ch1.txt
-written_2//non-fiction/OUP/Kauffman/ch1.txt
-written_2//non-fiction/OUP/Fletcher/ch1.txt
+written_2/non-fiction/OUP/Berk/ch1.txt
+written_2/non-fiction/OUP/Abernathy/ch1.txt
+written_2/non-fiction/OUP/Rybczynski/ch1.txt
+written_2/non-fiction/OUP/Kauffman/ch1.txt
+written_2/non-fiction/OUP/Fletcher/ch1.txt
 ```
 ```
 # Example Two: Input
